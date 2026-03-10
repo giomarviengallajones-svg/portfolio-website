@@ -1,22 +1,18 @@
 @font-face {
   font-family: openSauceBold; 
-  src: url(./OpenSauceSans-Bold.otf); 
+  src: url(./fonts/OpenSauceSans-Bold.otf); 
+}
+@font-face {
+    font-family: openSauceLight;
+    src: url(./fonts/OpenSauceOne-Light.otf);
 }
 
-.font-style {
+.font-openSauceBold {
   font-family: openSauceBold; 
 }
 
-:root {
-  --text-color: #f5f5f5;
-  --link-color: #00c0fe;
-  --background-color: #0e162c;
-}
-
-* {
- margin: 0;
- padding: 0;
- box-sizing: border-box;
+.font-openSauceLight {
+  font-family: openSauceLight;
 }
 
 html {
@@ -25,26 +21,5 @@ html {
 
 body {
     font-family: 'Open Sauce', sans-serif ;
-    background-color: var(--background-color);
 }
 
-a {
-    color: var(--link-color);
-    text-decoration: underline;
-}
-
-<!--NavBar-->
-nav {
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 50px;
-    height: 80px;
-    border: #0e162c;
-}
-
-nav .left a {
-    color: var(--text-color);
-
-
-}   
