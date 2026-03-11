@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="stylesheet" href="https://github.com/marcologous/Open-Sauce-Fonts.git">
+
+    <title>kuni Files</title>
+    <script src="scripts.js"></script>
+</head>
+
+
+
+<body class="bg-gray-800 text-gray-300 font-openSauceLight">
+    <!--NAVBAR-->
+    <header class="sticky top-0 bg-gray-800 border-b border-gray-800 z-50">
+      <nav class="max-w-6xl mx-auto flex justify-between items-center px-6 py-4">
+        <strong class="text-lg font-openSauceBold">The Kuni Files</strong>
+        <div class="space-x-4 text-gray-600 font-medium">
+          <a href="#aboutme" class="text-blue-200 hover:text-blue-600 transition duration-300">About</a>
+          <a href="#projects" class="text-blue-200 hover:text-blue-600 transition duration-300">Projects</a>
+          <a href="#contact" class="text-blue-200 hover:text-blue-600 transition duration-300">Contact</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!--Section 1: Homepage-->
+      <section class="min-h-[90vh] flex items-center justify-center text-center bg-gradient-to-br from-indigo-500 to-cyan-300 text-white px-6">
+        <div>
+          <h1 class="text-4xl md:text-6xl font-bold font-openSauceBold">Hi, I'm Kuni Miyumi!</h1>
+          <p class="mt-4 max-w-xl mx-auto text-lg md:text-xl opacity-90">
+            This is a placeholder for the homepage. I will be adding more content here soon, so stay tuned!
+          </p>
+
+          <button
+            onclick="document.getElementById('projects').scrollIntoView()"
+            class="mt-6 px-6 py-3 bg-white text-blue-800 font-semibold rounded-lg hover:bg-blue-100 transition"
+          >
+            View My Work
+          </button>
+        </div>
+      </section>
+      
+      <!--Section 2: About Me-->
+      <section id="aboutme" class="max-w-6xl mx-auto px-6 py-16">
+        <div class="flex items-center gap-4 mb-4 pb-4">
+          <h2 class="text-3xl font-bold font-openSauceBold border-r border-gray-600 pr-4">About Me</h2>
+          <span class="text-gray-500 text-sm">A little bit about myself</span>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8 items-center">
+          <p class="text-gray-200 leading-relaxed">
+            I'm a developer/designer who enjoys creating modern, user-friendly
+            experiences. I focus on clean code, accessibility, and performance.
+          </p>
+
+          <img
+            src="https://files.catbox.moe/0nbhe1.png"
+            alt="Profile photo"
+            class="rounded-xl w-full"
+          >
+        </div>
+      </section>
+
+      <!--Section 3: Gallery / Projects-->
+      <section id="projects" class="max-w-6xl mx-auto px-6 py-16">
+        <div class="flex items-center gap-4 mb-4 pb-4">
+          <h2 class="text-3xl font-bold font-openSauceBold border-r border-gray-600 pr-4">Projects</h2>
+          <span class="text-gray-500 text-sm">Some of my work</span>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="bg-gray-700 p-6 rounded-xl shadow-md hover:-translate-y-1 transition">
+            <h3 class="text-xl font-semibold mb-2">Project One</h3>
+            <p class="text-gray-300">Short description of what this project does.</p>
+          </div>
+          <div class="bg-gray-700 p-6 rounded-xl shadow-md hover:-translate-y-1 transition">
+            <h3 class="text-xl font-semibold mb-2">Project Two</h3>
+            <p class="text-gray-300">Another cool thing you built.</p>
+          </div>
+          <div class="bg-gray-700 p-6 rounded-xl shadow-md hover:-translate-y-1 transition">
+            <h3 class="text-xl font-semibold mb-2">Project Three</h3>
+            <p class="text-gray-300">Yet another awesome project.</p>
+          </div>          
+        </div>
+      </section>
+
+      <!--Section 4: Contacts-->
+      <section id="contact" class="max-w-6xl mx-auto px-6 py-16">
+        <div class="flex items-center gap-4 mb-4 pb-4">
+          <h2 class="text-3xl font-bold font-openSauceBold border-r border-gray-600 pr-4">Contact Me</h2>
+          <span class="text-gray-500 text-sm">Get in touch</span>
+        </div>
+        <!-- Contact form or information will go here -->
+      </section>
+    </main>
+</body>
+</html>
