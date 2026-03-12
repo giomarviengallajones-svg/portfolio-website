@@ -13,24 +13,25 @@
     
 </head>
 
-
-
 <body class="bg-gray-800 text-gray-300 font-openSauceLight">
 
     <header class="sticky top-0 bg-gray-800 border-b border-gray-800 z-50">
       <nav class="max-w-6xl mx-auto flex justify-between items-center px-6 py-4">
-        <strong class="text-lg font-openSauceBold">The Midnight Boulevard</strong>
+        <strong class="text-lg font-openSauceBold"><a href="#" class="text-blue-200 hover:text-blue-600 transition duration-300">The Midnight Boulevard </a></strong>
         <div class="space-x-4 text-gray-600 font-medium">
           <a href="#aboutme" class="text-blue-200 hover:text-blue-600 transition duration-300">About</a>
           <a href="#projects" class="text-blue-200 hover:text-blue-600 transition duration-300">Projects</a>
+          <a href="#gallery" class="text-blue-200 hover:text-blue-600 transition duration-300">Gallery</a>
           <a href="#contact" class="text-blue-200 hover:text-blue-600 transition duration-300">Contact</a>
         </div>
       </nav>
     </header>
 
     <main>
-      <section class="min-h-[90vh] flex items-center justify-center text-center bg-gradient-to-br from-indigo-500 to-cyan-300 text-white px-6">
-        <div>
+      <section class="min-h-[90vh] flex items-center justify-center text-center bg-fixed bg-cover bg-center relative text-white px-6" 
+               style="background-image: url('./img/arizona\ ice\ tea\ ahh\ design.png');">
+        <div class="absolute inset-0 bg-black/50"></div>
+        <div class="relative z-10">
           <h1 class="text-4xl md:text-6xl font-bold font-openSauceBold">Hi, I'm Kuni Miyumi!</h1>
           <p class="text-lg md:text-2xl mt-4 text-gray-200">A passionate graphic designer, and Editor.</p>
           <button
@@ -65,50 +66,72 @@
       <section id="projects" class="max-w-6xl mx-auto px-6 py-16">
         <div class="flex items-center gap-4 mb-4 pb-4">
           <h2 class="text-3xl font-bold font-openSauceBold border-r border-gray-600 pr-4">Projects</h2>
-          <span class="text-gray-500 text-sm">Some of the work i've made and created! (click the buttons to the video links) </span>
+          <span class="text-gray-500 text-sm">Some of the work i've made and created! (click the cards to see the videos)</span>
         </div>
 
         <div class="grid md:grid-cols-3 gap-6">
-          <div class="bg-gray-700 p-6 rounded-xl shadow-md hover:-translate-y-1 transition">
-            <h3 class="text-xl font-semibold mb-2">01 - adVenTauri System Editing Contest Submission</h3>
-            <a href="https://youtu.be/_090pOO03QI?si=sJLnDybHLaA9oeXq" class="text-gray-300 hover:text-blue-300 transition">The Video For the adVenTauri System Editing Contest, edited in November 2025. - Position - No.1.</a>
-          </div>
-          <div class="bg-gray-700 p-6 rounded-xl shadow-md hover:-translate-y-1 transition">
-            <h3 class="text-xl font-semibold mb-2">02 - Rotaeno Video Contest Submission</h3>
-            <a href="https://x.com/imnotzephyrXD/status/1798248301009211537?s=20" class="text-gray-300 hover:text-blue-300 transition">Another Contest, this time for the rhythm game Rotaeno. - Winner.</a>
-          </div>
-          <div class="bg-gray-700 p-6 rounded-xl shadow-md hover:-translate-y-1 transition">
-            <h3 class="text-xl font-semibold mb-2">03 - New Announcement Reaction</h3>
-            <a href="https://x.com/imnotzephyrXD/status/2002190466411028498?s=20" class="text-gray-300 hover:text-blue-300 transition">Nothing too special, just a little joke edit to an announcement i was looking forward to.</a>
-          </div>          
+          <a href="https://youtu.be/_090pOO03QI?si=sJLnDybHLaA9oeXq" target="_blank" 
+             class="bg-gray-700 rounded-xl shadow-md hover:-translate-y-1 hover:shadow-xl transition-all duration-300 overflow-hidden block group">
+            <img src="./img/oh_god.jpg" alt="Project placeholder" class="w-full h-40 object-cover">
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">01 - adVenTauri System Editing Contest Submission</h3>
+              <p class="text-gray-300 mb-4">The Video For the adVenTauri System Editing Contest, edited in November 2025. - Position - No.1.</p>
+              <span class="inline-block text-blue-200 group-hover:text-blue-300 font-medium">View project →</span>
+            </div>
+          </a>
+
+          <a href="https://x.com/imnotzephyrXD/status/1798248301009211537?s=20" target="_blank"
+             class="bg-gray-700 rounded-xl shadow-md hover:-translate-y-1 hover:shadow-xl transition-all duration-300 overflow-hidden block group">
+            <img src="./img/hands.jpg" alt="Project placeholder" class="w-full h-40 object-cover">
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">02 - Rotaeno Video Contest Submission</h3>
+              <p class="text-gray-300 mb-4">Another Contest, this time for the rhythm game Rotaeno. - Winner.</p>
+              <span class="inline-block text-blue-200 group-hover:text-blue-300 font-medium">View project →</span>
+            </div>
+          </a>
+
+          <a href="https://x.com/imnotzephyrXD/status/2002190466411028498?s=20" target="_blank"
+             class="bg-gray-700 rounded-xl shadow-md hover:-translate-y-1 hover:shadow-xl transition-all duration-300 overflow-hidden block group">
+            <img src="./img/lv_0_20260312223817.jpg" alt="Project placeholder" class="w-full h-40 object-cover">
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">03 - New Announcement Reaction</h3>
+              <p class="text-gray-300 mb-4">Nothing too special, just a little joke edit to an announcement i was looking forward to.</p>
+              <span class="inline-block text-blue-200 group-hover:text-blue-300 font-medium">View project →</span>
+            </div>
+          </a>
         </div>
       </section>
+
       <section id="gallery" class="max-w-6xl mx-auto px-6 py-16">
         <div class="flex items-center gap-4 mb-4 pb-4">
           <h2 class="text-3xl font-bold font-openSauceBold border-r border-gray-600 pr-4">Gallery</h2>
           <span class="text-gray-500 text-sm">A showcase of my work</span>
         </div>
 
-        <div class="relative overflow-hidden h-[400px] rounded-xl">
-
-          <!-- Carousel Track -->
-          <div id="carousel" class="flex items-center transition-transform duration-500">
-            <img src="./img/kuni.png" class="object-contain flex-shrink-0 h-max-[400px]">
-            <img src="./img/kuni.png" class="object-contain flex-shrink-0 h-max-[400px]">
-            <img src="./img/kuni.png" class="object-contain flex-shrink-0 h-max-[400px]">
+        <div class="relative overflow-hidden h-[400px] rounded-xl w-full">
+          <div id="carousel" class="flex items-center transition-transform duration-500 h-full">
+            <div class="w-full h-full flex-shrink-0 bg-gray-700 rounded-xl shadow-md">
+              <img src="./img/kuni.png" class="w-full h-full object-contain">
+            </div>
+            <div class="w-full h-full flex-shrink-0 bg-gray-700 rounded-xl shadow-md">
+              <img src="./img/IMG20260211155407.jpg" class="w-full h-full object-contain">
+            </div>
+            <div class="w-full h-full flex-shrink-0 bg-gray-700 rounded-xl shadow-md">
+              <img src="./img/IMG20251227144104.jpg" class="w-full h-full object-contain"> 
+            </div>
+            <div class="w-full h-full flex-shrink-0 bg-gray-700 rounded-xl shadow-md">
+              <img src="./img/IMG20241107071025.jpg" class="w-full h-full object-contain">
+            </div>
           </div>
 
-          <!-- Buttons -->
           <button onclick="prevSlide()" 
-            class="absolute left-2 top-1/2 -translate-y-1/2 bg-gray-900/60 px-3 py-2 rounded">
+            class="absolute left-2 top-1/2 -translate-y-1/2 bg-gray-900/60 px-3 py-2 rounded hover:bg-gray-900/80 transition">
             ◀
           </button>
-
           <button onclick="nextSlide()" 
-            class="absolute right-2 top-1/2 -translate-y-1/2 bg-gray-900/60 px-3 py-2 rounded">
+            class="absolute right-2 top-1/2 -translate-y-1/2 bg-gray-900/60 px-3 py-2 rounded hover:bg-gray-900/80 transition">
             ▶
           </button>
-
         </div>
       </section>
 
@@ -121,9 +144,9 @@
           <p class="text-gray-200 leading-relaxed">
             If you have any questions or want to work together, im all ears! contact me with these links in specific
           </p>
-        </div><div class="grid md:grid-cols-3 gap-6 mt-8">
+        </div>
+        <div class="grid md:grid-cols-3 gap-6 mt-8">
           <div class="bg-gray-700 p-6 rounded-xl shadow-md hover:-translate-y-1 transition">
-            
             <h3 class="text-xl font-semibold mb-2">Email</h3>
             <a
               href="mailto:gio.marvien.gallajones@gmail.com" 
@@ -133,7 +156,6 @@
             </a>
           </div>
           <div class="bg-gray-700 p-6 rounded-xl shadow-md hover:-translate-y-1 transition">
-            
             <h3 class="text-xl font-semibold mb-2">Youtube</h3>
             <a
               href="https://youtube.com/@overdeadzephyr?si=nSWPLMuy66MocX6Y" 
@@ -144,7 +166,6 @@
             </a>
           </div>
           <div class="bg-gray-700 p-6 rounded-xl shadow-md hover:-translate-y-1 transition">
-              
             <h3 class="text-xl font-semibold mb-2">Twitter / X</h3>
             <a
               href="https://x.com/imnotzephyrXD" 
